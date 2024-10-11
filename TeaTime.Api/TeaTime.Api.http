@@ -1,0 +1,6 @@
+@TeaTime.Api_HostAddress = http://localhost:5105
+
+GET {{TeaTime.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
