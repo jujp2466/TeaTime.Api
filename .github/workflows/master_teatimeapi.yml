@@ -6,7 +6,7 @@ name: Build and deploy ASP.Net Core app to Azure Web App - TeaTimeApi
 on:
   push:
     branches:
-      - master
+      - jujp2466-patch-1
   workflow_dispatch:
 
 jobs:

@@ -34,7 +34,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowSpecificOrigin",
         builder =>
         {
-            builder.WithOrigins("http://localhost:5173", "https://localhost:5173")
+            builder.WithOrigins("http://localhost:5173", "https://icy-glacier-0f3eddc0f.5.azurestaticapps.net")
                    .AllowAnyHeader()
                    .AllowAnyMethod();
         });
@@ -55,8 +55,8 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 //if (app.Environment.IsDevelopment())
 //{
-//    app.UseSwagger();
-//    app.UseSwaggerUI();
+app.UseSwagger();
+app.UseSwaggerUI();
 //}
 
 app.UseCors("AllowSpecificOrigin");
